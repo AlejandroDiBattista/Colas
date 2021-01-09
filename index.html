@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cola de espera</title>
+    <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet" >
+    <link href="https://fonts.gstatic.com" rel="preconnect" >
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+    </div>
+
+    <script type="module">
+        import './index.css'
+
+        import { createApp } from 'vue'
+        import App from './src/App.vue'
+        import router from './src/router'
+
+        createApp(App).use(router).mount('#app')
+    </script>
+    <!-- <script src="cola.js"></script> -->
+</body>
+
+</html>
