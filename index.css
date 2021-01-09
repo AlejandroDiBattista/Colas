@@ -71,6 +71,7 @@ footer button {
     font-size: 24px;
     font-weight: lighter;
     border: none;
-    background-color: transparent;
+    background-color: #0d87e90a;
+    border-radius: 8px;
     color: #0d87e9;
 }

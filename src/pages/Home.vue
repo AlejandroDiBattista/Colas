@@ -3,10 +3,10 @@
     Colas
   </head>
   <div class="cantidad centrar">
-      <Icono nombre="user-clock" grande />
+    <Icono nombre="user-clock" grande />
   </div>
   <div class="info">
-      <strong> Estimación de tiempo de espera en cola</strong>
+    <strong> Estimación de tiempo de espera en cola</strong>
   </div>
 
   <footer>
@@ -21,6 +21,6 @@
 <script>
 import Icono from "../components/Icono.vue";
 export default {
-    components: {Icono}
-}
+  components: { Icono },
+};
 </script>

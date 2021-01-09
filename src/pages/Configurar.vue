@@ -1,6 +1,6 @@
 <template>
   <head class="titulo centrar">
-    ¿Cuantas personas hay?
+    ¿Cuántas personas hay?
   </head>
 
   <div class="cantidad centrar">{{ cantidad }}</div>

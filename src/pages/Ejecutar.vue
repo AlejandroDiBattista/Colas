@@ -1,6 +1,6 @@
 <template>
   <head class="titulo centrar">
-    ¿Cuantas personas faltan?
+    ¿Cuántas personas faltan?
   </head>
 
   <div class="cantidad centrar" :class="{ excedido: esVencido && hayDatos }">
@@ -13,7 +13,7 @@
     </div>
     <template v-if="hayDatos">
       <div v-if="esVencido" class="excedido">
-        Se paso <strong>{{ tiempoExcedido }}</strong>
+        Se pasó <strong>{{ tiempoExcedido }}</strong>
       </div>
       <div v-else-if="esEstimado">
         Falta <strong>{{ tiempoFaltante }}</strong>
