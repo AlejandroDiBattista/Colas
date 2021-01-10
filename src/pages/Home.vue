@@ -6,7 +6,7 @@
     <Icono nombre="user-clock" grande />
   </div>
   <div class="info">
-    <strong> Estimación de tiempo de espera en cola</strong>
+    <strong> Estimación tiempo de espera en cola</strong>
   </div>
 
   <footer>
