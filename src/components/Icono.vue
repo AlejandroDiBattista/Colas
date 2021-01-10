@@ -1,7 +1,7 @@
 <template>
   <div :class="{'grande': grande, 'chico': !grande, 'desabilitar' : !valido }">
     <span class="fa-stack fa-2x">
-      <i class="far fa-circle fa-stack-2x"></i>
+      <i v-if="!simple" class="far fa-circle fa-stack-2x"></i>
       <i class="fas fa-stack-1x" :class="[`fa-${nombre}`]"></i>
     </span>
   </div>
@@ -16,7 +16,8 @@ export default {
     valido: {
       type: Boolean,
       default: true, 
-    }
+    },
+    simple: Boolean,
   },
 };
 </script>
@@ -35,6 +36,7 @@ export default {
 .desabilitar .fa-stack-2x{
   color: lightgray;
 }
+
 .desabilitar i {
   color: gray;
 }

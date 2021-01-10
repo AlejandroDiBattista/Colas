@@ -3,7 +3,7 @@
     Colas
   </head>
   <div class="cantidad centrar">
-    <Icono nombre="user-clock" grande />
+    <Icono nombre="user-clock" grande simple/>
   </div>
   <div class="info">
     <strong> Estimación tiempo de espera en cola</strong>
