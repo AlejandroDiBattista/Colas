@@ -10,7 +10,7 @@ Estas es una paginas simple para probar la generacion de HTML a partir de markdo
 | ------------- |:-------------:| -----:|
 | *col* 3 is    | derecha       |  $123 |
 | col 2 is      | centrado      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| zebra stripes | alternado      |    $1 |
 
 :tada: :100:
 
