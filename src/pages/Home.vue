@@ -2,7 +2,7 @@
   <head class="titulo centrar">
     Colas
   </head>
-  <div class="cantidad centrar">
+  <div class="cantidad centrar logo">
     <Icono nombre="user-clock" grande simple/>
   </div>
   <div class="info">
