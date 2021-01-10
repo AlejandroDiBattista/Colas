@@ -2,17 +2,14 @@
   <head class="titulo centrar">
     Colas
   </head>
-  <div class="cantidad centrar logo">
-    <Icono nombre="user-clock" grande simple/>
+  <div class="cantidad centrar">
+    <Icono nombre="user-clock" grande />
   </div>
   <div class="info">
     <strong> Estimación tiempo de espera en cola</strong>
   </div>
 
   <footer>
-    <!-- <router-link :to="{path: `/`}" replace>
-      <button class="accion" @click="navigate">Cola Numerada</button>
-    </router-link> -->
     <router-link :to="{ path: `/configurar` }" replace>
       <button class="accion" @click="navigate">Cola Simple</button>
     </router-link>
@@ -20,7 +17,5 @@
 </template>
 <script>
 import Icono from "../components/Icono.vue";
-export default {
-  components: { Icono },
-};
+export default { components: { Icono } };
 </script>
