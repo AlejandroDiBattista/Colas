@@ -5,8 +5,9 @@
   <div class="cantidad centrar">
     <Icono nombre="user-clock" grande />
   </div>
-  <div class="info">
-    <strong> Estimación tiempo de espera en cola</strong>
+  <div class="info">Estimación tiempo 
+    <br />de espera en cola
+    {{isFullscreen}}
   </div>
 
   <footer>
@@ -17,5 +18,14 @@
 </template>
 <script>
 import Icono from "../components/Icono.vue";
-export default { components: { Icono } };
+import { useFullscreen } from "@vueuse/core";
+
+export default { 
+  components: { Icono }, 
+  setup() {
+    const { isFullscreen, enter, exit, toggle } = useFullscreen();
+    toggle();
+    return {isFullscreen}
+  } 
+  };
 </script>
