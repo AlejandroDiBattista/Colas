@@ -1,7 +1,10 @@
+--- 
+title: Hola titulo
+---
+
 # Hola mundo
 
 Estas es una paginas simple para probar la generacion de HTML a partir de markdownnpm
-
 
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
@@ -13,4 +16,8 @@ Estas es una paginas simple para probar la generacion de HTML a partir de markdo
 
 ::: tip
 This is a tip
-::: 
+:::
+
+::: danger PELIGRO
+Esta es una nota peligrosa
+:::
