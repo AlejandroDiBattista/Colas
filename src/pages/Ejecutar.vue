@@ -1,4 +1,5 @@
 <template>
+  <Cancelar />
   <head class="titulo centrar">
     ¿Cuántas personas faltan?
   </head>
@@ -39,11 +40,12 @@ import { computed, onUnmounted, reactive } from "vue";
 import { useRoute } from "vue-router";
 
 import Icono from "../components/Icono.vue";
+import Cancelar from "../components/Cancelar.vue";
 
 import { Cola } from "../ColaSimple.js";
 
 export default {
-  components: { Icono },
+  components: { Icono, Cancelar },
   props: ["cantidad"],
 
   setup(props) {
