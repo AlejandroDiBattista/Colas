@@ -1,0 +1,22 @@
+{
+	"name": "Colas de Esperas",
+	"short_name": "Colas",
+	"theme_color": "#2196f3",
+	"background_color": "#2196f3",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"scope": "/",
+	"start_url": "/",
+	"icons": [
+		{
+			"src": "./scr/assert/pwa-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "./scr/assert/pwa-512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+    ]
+}
