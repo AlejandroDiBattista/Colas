@@ -36,13 +36,28 @@
 <script>
 import { horaHumanizada } from "../utils.js";
 
-import { computed, onUnmounted, reactive } from "vue";
+import { computed, onMounted, onUnmounted, reactive } from "vue";
 import { useRoute } from "vue-router";
 
 import Icono from "../components/Icono.vue";
 import Cancelar from "../components/Cancelar.vue";
 
 import { Cola } from "../ColaSimple.js";
+import firebase from 'firebase';
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBktwOkV0ZgiD0HERHFG9Ymzfs7BBxZy4g",
+  authDomain: "colas-01.firebaseapp.com",
+  databaseURL: "https://colas-01-default-rtdb.firebaseio.com",
+  projectId: "colas-01",
+  storageBucket: "colas-01.appspot.com",
+  messagingSenderId: "900640929888",
+  appId: "1:900640929888:web:3106fc0a6ca251627f2b05"
+};
+
+const app = firebase.initializeApp(firebaseConfig);
+const db = app.database()
+const cl = db.ref('cola');
 
 export default {
   components: { Icono, Cancelar },
@@ -65,6 +80,12 @@ export default {
       console.log("onUnmounted");
       clearInterval(reloj);
       cola.value = null;
+    });
+    onMounted( () => { 
+
+      cl.push({"mensaje": "Hola", props: props });
+      console.log(`Montando... ${props}`) ;
+
     });
 
     const hayDatos = computed(() => !cola.esInicio && cola.tiempoEsperado > 1);
